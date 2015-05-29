@@ -99,9 +99,9 @@ class Vigenere {
 			$k = array_search($keyArray[$i], $this->chars);
 
 			if($decrypt) {
-				$vigValue = $this->encryptFormula($p, $k);
-			} else {
 				$vigValue = $this->decryptFormula($p, $k);
+			} else {
+				$vigValue = $this->encryptFormula($p, $k);
 			}
 			
 			$result .= $this->chars[$vigValue];

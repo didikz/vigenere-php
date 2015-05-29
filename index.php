@@ -13,5 +13,5 @@ $encryptionResult = $encryption->vigenere($plaintext);
 echo "Encryption result: ".$encryptionResult."\n";
 
 // start decrypt
-$decryptionResult = $encryption->vigenere($encryptionResult, 'decrypt');
+$decryptionResult = $encryption->vigenere($encryptionResult, true);
 echo "Decryption result: ".$decryptionResult."\n";
